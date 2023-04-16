@@ -1,0 +1,16 @@
+public class Vowels
+ {
+   public static void main(String [] args)
+    {
+      System.out.println(Vowels("gokul"));
+      System.out.println(Vowels("hi"));
+    }
+  public static boolean Vowels(String input)
+   {
+     return input.toLowercase().matches(".*[aeiou]*.");
+    }
+ }
+ 
+//output
+//true
+//true
