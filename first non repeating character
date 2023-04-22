@@ -1,0 +1,27 @@
+import java.io.*;
+ 
+public class GFG {
+    public static void main(String[] args) {
+        String string = "forever";
+        int index = -1;
+        char g = ' ';
+        for (char i : string.toCharArray()) {
+            if (string.indexOf(i) == string.lastIndexOf(i)) {
+                g = i;
+                break;
+            }
+            else {
+                index += 1;
+            }
+        }
+        if (index == 1) {
+            System.out.println("Either all characters are repeating or "
+                             + "string is empty");
+        }
+        else {
+            System.out.println("First non-repeating character is " + g);
+        }
+    }
+    /* output
+    First non-repeating character is f
+    */
