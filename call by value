@@ -1,0 +1,19 @@
+class a
+{
+int data=30;
+void change(int data)
+{
+  data=data+10;
+} 
+ public static void main(String[] args)
+  {
+    a b=new a();
+    System.out.println("befor change"+b.data);
+    b.change(400);
+    System.out.println("after change"+b.data);
+  }
+}  
+/* output
+befor change 30
+after change 30 */
+    
