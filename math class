@@ -1,0 +1,21 @@
+public class math
+{
+  public static void main(String[]args)
+  {
+    double x=3;
+    double y=16;
+    System.out.println("Square root of x:"+Math.sqrt(x));
+    System.out.println("power of x and y:"+Math.pow(x,y));
+    System.out.println("exp of x:"+Math.exp(x));
+    System.out.println("exp of y:"+Math.exp(y));
+    System.out.println("log 10 of y:"+Math.log(y));
+    System.out.println("log 10 of x:"+Math.log(x));
+  }
+}  
+/* output
+Square root of x:1.7320508075688772
+power of x and y:4.3046721E7
+exp of x:20.085536923187668
+exp of y:8886110.520507872
+log 10 of y:2.772588722239781
+log 10 of x:1.0986122886681098  */
