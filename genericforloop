@@ -1,0 +1,22 @@
+import java.io.*;
+  
+class GenericsForLoop {
+    
+    public static void main(String[] args)
+    {
+        int arr[] = { 12, 16, 03, 04, 35 };
+        int s = sum(arr);
+        System.out.println(s);
+    }
+    public static int sum(int arr[])
+    {
+        int sum = 0;
+        for (int var : arr) {
+            sum += var;
+        }
+  
+        return sum;
+    }
+}
+/* output
+70 */
