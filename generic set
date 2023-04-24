@@ -1,0 +1,29 @@
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+  
+public class GenericSet {
+    public static void main(String[] args)
+    {
+        Set<Integer> set1 = new HashSet<Integer>();
+        set1.add(100);
+        set1.add(Integer.valueOf(103));
+        Set<String> set2 = new HashSet<String>();
+        set2.add("welcome to gce");
+        set2.add("generics");
+        for (Integer data : set1) {
+            System.out.printf("Integer Value :%d\n", data);
+        }
+        Iterator<String> stringIt = set2.iterator();
+  
+        while (stringIt.hasNext()) {
+            System.out.printf("String Value :%s\n",
+                              stringIt.next());
+        }
+    }
+}
+/* output
+Integer Value :100
+Integer Value :103
+String Value :generics
+String Value :welcome to gce */
