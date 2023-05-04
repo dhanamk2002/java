@@ -1,0 +1,14 @@
+public class b
+{
+ public static void main(String args[])
+ {
+  int my_array={ 3,16,6,12};
+  int sum=0;
+  for(int i : my_array)
+    sum + = i;
+   System.out.println("The sum of array is"+sum);
+  }
+ } 
+ /*output
+ The sum of array is 37
+ */
