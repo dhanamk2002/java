@@ -1,0 +1,21 @@
+package javaconcept;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class bufferedwriteExample {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		String location="bufferfile.txt";
+		String content="welcome to buffered write concept!!";
+		String content1="It is easy or not?";
+		FileWriter filewriter=new FileWriter(location);
+		BufferedWriter buffer=new BufferedWriter(filewriter);
+	    buffer.write(content);
+	    buffer.close();
+
+	}
+
+}
