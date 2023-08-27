@@ -1,0 +1,21 @@
+package javaconcept;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class bufferedReaderExample {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		String location="bufferfile.txt";
+		FileReader files=new FileReader(location);
+		BufferedReader buffer=new BufferedReader(files);
+		String line=buffer.readLine();
+		
+        System.out.println(line);
+        
+	}
+
+}
